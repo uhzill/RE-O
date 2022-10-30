@@ -1,29 +1,27 @@
-* { margin: 0; padding:0; box-sizing: border-box; font-family: 'Pretendard-Regular'; } 
+@import "reset.css"; 
+
 @font-face { 
  font-family: 'Pretendard-Regular'; 
  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff'); 
  } 
 html { scroll-behavior: smooth; } 
-body {
-    overflow-y: hidden;
-    height: 100%;
-  }
+body { overflow-y: hidden; height: 100%; } 
 
 .container { width: calc(100vw * 9 + 6000px); height: calc(100vh - 10px); } 
-.section { width: 100vw; height: calc(100vh - 10px); float: left; display: flex; justify-content: space-between; } 
+section.item { width: 100vw; /*min-width: 1024px; */ height: calc(100vh - 10px); float: left; display: flex; justify-content: space-between; } 
 .longSection { width: 3000px; } 
 
-.section:nth-child(1) { background: #dddddd; } 
-.section:nth-child(2) { background: #fff; } 
-.section:nth-child(3) { background: #dddddd; } 
-.section:nth-child(4) { background: #fff; } 
-.section:nth-child(5) { background: #dddddd; } 
-.section:nth-child(6) { background: #fff; } 
-.section:nth-child(7) { background: #dddddd; } 
-.section:nth-child(8) { background: #fff; } 
-.section:nth-child(9) { background: #dddddd; } 
-.section:nth-child(10) { background: #fff; } 
-.section:nth-child(11) { background: #dddddd; } 
+section:nth-child(1) { background: #dddddd; } 
+section:nth-child(2) { background: #fff; } 
+section:nth-child(3) { background: #dddddd; } 
+section:nth-child(4) { background: #fff; } 
+section:nth-child(5) { background: #dddddd; } 
+section:nth-child(6) { background: #fff; } 
+section:nth-child(7) { background: #dddddd; } 
+section:nth-child(8) { background: #fff; } 
+section:nth-child(9) { background: #dddddd; } 
+section:nth-child(10) { background: #fff; } 
+section:nth-child(11) { background: #dddddd; } 
 
 .h1Wrap { 
  border: 2px solid red; 
@@ -76,8 +74,8 @@ h1.h1Title {
  border-radius: 100px; 
  } 
 
- @media (max-width: 700px) {
-  .small-tomato {
-    background-color: tomato;
-  }
-}
+ @media (max-width: 700px) { 
+ .small-tomato { 
+ background-color: tomato; 
+ } 
+ } 
