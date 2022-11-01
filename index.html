@@ -28,8 +28,9 @@
 		</section>
 
 
-		<section class="content">
+		<section class="content video">
 			<h2 class="title blind">영상</h2>
+			<video controls autoplay muted loop src="./reo.mp4"></video>
 		</section>
 
 
@@ -46,7 +47,7 @@
 			<h1>RE:O</h1>
 			<p><b>1</b> 주인공인 구<span class="gray">球</span>의 삶을 되돌아 봄</p>
 			<p><b>2</b> 다시 구로 되돌아감 <span class="gray">무한 루프 영상</span></p>
-			<h2 class="title"> 우리는 어떤 색으로 물들어가고 있을까?</h2>
+			<h2> 우리는 어떤 색으로 물들어가고 있을까?</h2>
 		</section>
 
 
@@ -78,37 +79,44 @@
 		<section class="contentTitle">
 			<h1 class="num">5.</h1>
 			<h1 class="title">TEAM. DOREMI</h1>
+			<p class="description"></p>
+			<p class="description">도레미는 연년생으로 구성된 팀으로, 
+				악보 위 음표처럼 조화롭게 프로젝트를 해나가겠다는 포부를 담아 팀명을 정했습니다.</p>
 		</section>
 
 
-		<section class="content">
-			<h2 class="title blind">팀 도레미 소개</h2>
-			<div class="member">
-				<img src="https://www.dummyimage.com/300x400/fff/eee" alt="">
-				<ul>
-					<li>Designer</li>
-					<li>이지윤</li>
-					<li>lgy0828@naver.com</li>
-					<li>010-8758-0828</li>
-				</ul>
+		<section class="content team">
+			<div class="doremi">
+				<h2 class="title">Team. DOREMI</h2>
 			</div>
-			<div class="member">
-				<img src="https://www.dummyimage.com/300x400/fff/eee" alt="">
-				<ul>
-					<li>Designer</li>
-					<li>김연미</li>
-					<li>dusal3189@naver.com</li>
-					<li>010-8859-3189</li>
-				</ul>
-			</div>
-			<div class="member">
-				<img src="https://www.dummyimage.com/300x400/fff/eee" alt="">
-				<ul>
-					<li>Designer</li>
-					<li>이지윤</li>
-					<li>uhzillzzz@naver.com</li>
-					<li>010-5123-4110</li>
-				</ul>
+			<div class="wrap">
+				<div class="member">
+					<img src="https://www.dummyimage.com/300x400/fff/eee" alt="이지윤">
+					<ul>
+						<li>Designer</li>
+						<li>LEE JIYOON</li>
+						<li>lgy0828@naver.com</li>
+						<li>010-8758-0828</li>
+					</ul>
+				</div>
+				<div class="member">
+					<img src="https://www.dummyimage.com/300x400/fff/eee" alt="김연미">
+					<ul>
+						<li>Designer</li>
+						<li>KIM YEONMI</li>
+						<li>dusal3189@naver.com</li>
+						<li>010-8859-3189</li>
+					</ul>
+				</div>
+				<div class="member">
+					<img src="https://www.dummyimage.com/300x400/fff/eee" alt="임주현">
+					<ul>
+						<li>Programer</li>
+						<li>LIM JOOHYUN</li>
+						<li>uhzillzzz@naver.com</li>
+						<li>010-5123-4110</li>
+					</ul>
+				</div>
 			</div>
 		</section>
 
@@ -123,15 +131,17 @@
 	$(document).ready(function(){
 		$(function(){
 
+			var intViewportWidth = window.innerWidth;
+
 			$("html").mousewheel(function(event, d){
 
 				if(d > 0){//스크롤 올릴 때 
 					var scroll = $(window).scrollLeft();
-					scroll -= 700; 
+					scroll -= intViewportWidth; 
 
 				} else if(d < 0) { //스크롤 내릴 때
 					var scroll = $(window).scrollLeft();
-					scroll += 700;
+					scroll += intViewportWidth;
 				}
 
 				$("html, body").stop().animate({
