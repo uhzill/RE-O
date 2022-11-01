@@ -7,7 +7,7 @@ body { overflow-y: hidden; height: 100%; }
 .blind { position: absolute; width: 1px; height: 1px; clip: rect(0 0 0 0); overflow: hidden; } 
 
 section.container { display: flex; width: calc(100vw * 11); height: calc(100vh - 10px); } 
-section.container .content,.titleCover { width: 100vw; min-width: 1200px; box-sizing: border-box; padding: 4.5em; } 
+section.container .content,.contentTitle { width: 100vw; min-width: 1200px; box-sizing: border-box; padding: 4.5em; } 
 
 section.container .content { background: #ddd; } 
 section.container .content h1 { font-size: 120px; } 
@@ -15,15 +15,37 @@ section.container .content h2 { font-size: 40px; }
 section.container .content p { margin: 6px; font-size: 25px; } 
 section.container .content p span.gray { color: #676767; font-size: 20px; } 
 
-/* 그라데이션 배경 */
-section.container .gradientBg { } 
+section.container .contentTitle { background: #fff; display: grid; grid-gap: 30px; grid-template-columns: 1fr 380px 380px; grid-template-rows: repeat(3, 1fr); } 
+section.container .contentTitle h1 { display: flex; font-size: 180px; line-height: 150px; } 
+section.container .contentTitle h1.num { grid-row:1; grid-column: 1/2; } 
+section.container .contentTitle h1.title { grid-row:3; grid-column: 1/4; align-items: end; } 
+section.container .contentTitle p.description { font-size: 22px; line-height: 30px; } 
 
-section.container .titleCover { background: #fff; display: grid; grid-gap: 30px; grid-template-columns: 1fr 380px 380px; grid-template-rows: repeat(3, 1fr); } 
-section.container .titleCover h1 { display: flex; font-size: 180px; line-height: 150px; } 
-section.container .titleCover h1.num { grid-row:1; grid-column: 1/2; } 
-section.container .titleCover h1.title { grid-row:3; grid-column: 1/4; align-items: end; } 
 
-section.container .titleCover p.description { font-size: 22px; line-height: 30px; } 
+/* main */
+section.container .main{background-image: url(../);}
+background-position: center;
+얘가 background-size: cover;
+
+
+/* 1.video */
+
+
+
+/* 2. ABOUT RE:O */
+section.container .gradientBg {  } 
+
+
+/* 3. WORK PROCESS */
+
+
+/* 4. STILL CUT */
+
+
+/* 5. TEAM. DOREMI */
+
+
+
 
 /* 스크롤바 커스텀 */
 ::-webkit-scrollbar { height: 10px; } 
