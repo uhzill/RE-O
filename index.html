@@ -44,10 +44,13 @@
 
 
     	<section class="content gradientBg">
-			<h1>RE:O</h1>
-			<p><b>1</b> 주인공인 구<span class="gray">球</span>의 삶을 되돌아 봄</p>
-			<p><b>2</b> 다시 구로 되돌아감 <span class="gray">무한 루프 영상</span></p>
-			<h2> 우리는 어떤 색으로 물들어가고 있을까?</h2>
+			<div class="wrap">
+				<h1>RE:O</h1>
+				<p><b>1</b> 주인공인 구<span class="gray">球</span>의 삶을 되돌아 봄</p>
+				<p><b>2</b> 다시 구로 되돌아감 <span class="gray">무한 루프 영상</span></p>
+			</div>
+			<img src="./img/keyword.png" alt="키워드 : 삶, 색채, 감정, 형태, 물들다, 돌아보다,경험, 자신, 과거, 현재, 망설임, 다양한 사람들">
+			<h2> 우리는 어떤 형태로 물들어가고 있을까?</h2>
 		</section>
 
 
@@ -60,7 +63,7 @@
 		</section>
 
 
-		<section class="content">
+		<section class="content workProcess">
 			<h2 class="title blind">작업과정 소개</h2>
 		</section>
 
@@ -131,17 +134,17 @@
 	$(document).ready(function(){
 		$(function(){
 
-			var intViewportWidth = window.innerWidth;
+			// var intViewportWidth = window.innerWidth;
 
 			$("html").mousewheel(function(event, d){
 
 				if(d > 0){//스크롤 올릴 때 
 					var scroll = $(window).scrollLeft();
-					scroll -= intViewportWidth; 
+					scroll -= 500; 
 
 				} else if(d < 0) { //스크롤 내릴 때
 					var scroll = $(window).scrollLeft();
-					scroll += intViewportWidth;
+					scroll += 500;
 				}
 
 				$("html, body").stop().animate({
