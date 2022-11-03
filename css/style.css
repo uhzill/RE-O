@@ -61,7 +61,7 @@ section.container .workProcess{ width: auto; }
 section.container .team { display: grid; grid-template-rows: repeat(2, 1fr); font-size: 20px; line-height: 30px; justify-items: end; } 
 section.container .team .doremi { width: 100%; } 
 section.container .team .doremi h2 { font-size: 50px; } 
-section.container .team .wrap { display: grid; grid-gap: 20px; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); } 
+section.container .team .wrap { display: grid; grid-gap: 20px; grid-template-columns: repeat(3, 1fr); } 
 section.container .team .member img { height: 40vh; } 
 
 section.container .team .member li:nth-child(2) { font-size: 30px; font-weight: bold; } 
