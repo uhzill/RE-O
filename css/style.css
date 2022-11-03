@@ -22,9 +22,9 @@ section.container .contentTitle p.description { font-size: 22px; line-height: 30
 
 
 /* main */
-section.container .main { background-image: url('../img/mainBg.png'); background-size: cover; background-repeat: no-repeat; background-position: center; color: #fff; } 
-section.container .main h2 { font-size: 100px; } 
-section.container .main h3 { font-size: 22px; } 
+section.container #_main { background-image: url('../img/mainBg.png'); background-size: cover; background-repeat: no-repeat; background-position: center; color: #fff; } 
+section.container #_main h2 { font-size: 100px; } 
+section.container #_main h3 { font-size: 22px; } 
 
 
 /* 1.video */
@@ -65,8 +65,8 @@ section.container .stillCut { display:flex; gap: 100px; align-items: center; wid
 section.container .stillCut img { height: 50vh; }
 section.container .stillCut .stillcut_text_wrap { display:flex; flex-direction: column; justify-content: space-between; width:1500px; }
 section.container .stillCut .stillcut_text_wrap p { font-size: 80px; font-weight: bold; }
-section.container .stillCut .stillcut_text_wrap canvas { margin: -180px 0 -180px 250px; width: 600px; height: 500px; z-index: -5;  border: 1px solid rgb(0, 255, 132); }
-section.container .stillCut .stillcut_text_wrap .wrap{ border: 1px solid red; }
+section.container .stillCut .stillcut_text_wrap canvas { margin: -180px 0 -180px 250px; width: 600px; height: 500px; border: 1px solid red; }
+/* section.container .stillCut .stillcut_text_wrap .wrap{ border: 1px solid red; } */
 section.container .stillCut .stillcut_text_wrap .wrap:nth-child(3) { text-align: right; }
 
 
