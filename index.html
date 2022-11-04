@@ -18,24 +18,23 @@
 
 </head>
 <body>
-	
-	<nav class="menu">
-		<input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
-		<label class="menu-open-button" for="menu-open">
-		  <span class="hamburger hamburger-1"></span>
-		  <span class="hamburger hamburger-2"></span>
-		  <span class="hamburger hamburger-3"></span>
-		</label>
-		
-		<a href="#_main" class="menu-item"> RE:O </a>
-		<a href="#_video" class="menu-item"> 1 </a>
-		<a href="#_about_reo" class="menu-item"> 2 </a>
-		<a href="#_process" class="menu-item"> 3 </a>
-		<a href="#_stillcut" class="menu-item"> 4 </a>
-		<a href="#_team" class="menu-item"> 5 </a>
-		
-	  </nav>
-
+	<header>
+		<nav class="menu">
+			<input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+			<label class="menu-open-button" for="menu-open">
+			<span class="hamburger hamburger-1"></span>
+			<span class="hamburger hamburger-2"></span>
+			<span class="hamburger hamburger-3"></span>
+			</label>
+			
+			<a href="#_main" class="menu-item"> RE:O </a>
+			<a href="#_video" class="menu-item"> 1 </a>
+			<a href="#_about_reo" class="menu-item"> 2 </a>
+			<a href="#_process" class="menu-item"> 3 </a>
+			<a href="#_stillcut" class="menu-item"> 4 </a>
+			<a href="#_team" class="menu-item"> 5 </a>
+		</nav>
+	</header>
 	<section class="container" >
 
 
@@ -149,11 +148,11 @@
 					<p>당신은</p>
 				</div>
 				<div class="wrap">	
-				<canvas id="canvas"></canvas>
+					<div class="show"></div>
 				</div>
 				<div class="wrap">	
 					<p>어떤 형태로</p>
-					<p>물들어가고<span>있나요?</span></p>
+					<p>물들어가고<span> 있나요?</span></p>
 				</div>
 			</div>
 		</section>
@@ -205,6 +204,9 @@
 
 
 	</section>
+	<footer>
+		ⓒ 2022. DOREMI All rights reserved.
+	</footer>
 
 	<script>
 		$(document).ready(function(){
@@ -236,13 +238,13 @@
 	
 		// 물결
 		$(".gradientBg").ripples({
-			resolution: 256, // 렌더링 값이 클수록 잔물결 효과가 느리게 전파
-			perturbance: 0.04, // 잔물경 굴절 강도. 0은 굴절 없음
+			resolution: 400, // 렌더링 값이 클수록 잔물결 효과가 느리게 전파
+			perturbance: 5, // 잔물경 굴절 강도. 0은 굴절 없음
 		});
 		</script>
 
 	<!-- three.js -->
-	<script type="importmap">
+	<!-- <script type="importmap">
 	{
 		"imports": {
 		"three": "https://unpkg.com/three@0.138.3/build/three.module.js",
@@ -250,9 +252,9 @@
 		"https://unpkg.com/three@0.141.0/examples/jsm/loaders/GLTFLoader.js"
 		}
 	}
-	</script>
+	</script> -->
 	
-	<script type="module">
+	<!-- <script type="module">
 	
 		import { GLTFLoader } from 'GLTFLoader';
 		import * as THREE from 'three';
@@ -267,24 +269,25 @@
 		let camera = new THREE.PerspectiveCamera(30, 1);
 		camera.position.set(0,0,5);
 
-		scene.background = new THREE.Color('#1d1d1d');
+		scene.background = new THREE.Color('#333333');
 		let light = new THREE.DirectionalLight(0xffff00, 10);
 		scene.add(light);
 
 		let loader = new GLTFLoader();
-		loader.load('shiba/scene.gltf', function(gltf){
+		loader.load('o/scene.gltf', function(gltf){
 			scene.add(gltf.scene);
 			renderer.render(scene, camera);
 			function animate(){
 				requestAnimationFrame(animate)
 				gltf.scene.rotation.x += 0.01;
 				gltf.scene.rotation.y += 0.01;
+				gltf.scene.rotation.z += 0.01;
 				renderer.render(scene, camera);
 			}
 			animate()
 		});
 
-	</script>
+	</script> -->
 </body>
  
 </html>
