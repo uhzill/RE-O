@@ -1,9 +1,9 @@
 
 $(document).ready(function(){
     $(function(){
-        // var intViewportWidth = window.innerWidth;
+
         $("html").mousewheel(function(event, d){
-            // var innerWidth = window.innerWidth;
+
             if(d > 0){//스크롤 올릴 때 
                 var scroll = $(window).scrollLeft();
                 scroll -= 500; 

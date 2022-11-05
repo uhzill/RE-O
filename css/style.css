@@ -62,11 +62,11 @@ body { overflow-y: hidden; height: 100%; font-family: 'MinSans-Medium'; font-wei
 
 /* 1.video */
 .container #_video h1.title { grid-row:3; grid-column: 1/3; }
-.container #_video img{ grid-row:3; grid-column: 3/4; margin: 50px 0 0 -100px; width: 500px;}
+.container #_video img{ grid-row:3; grid-column: 3/4; margin: 50px 0 0 -100px; width: 500px; }
 .container .video { width:fit-content; min-width: none; padding: 0; } 
 .container .video video { width: auto; height: 100%; } 
 
-.container .stepAnimation { position: relative; display: flex; padding: 0; text-align: center; } 
+.container .stepAnimation { position: relative; display: flex; padding: 0;} 
 .container .stepAnimation #canv { position: absolute; }
 .container .stepAnimation .show { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width:700px; height:700px; background: url('../img/o.png') no-repeat; background-size: cover; animation: reoAni 3.5s infinite alternate steps(31); } 
 @keyframes reoAni { 100% { background-position: -21700px 0; }  }
