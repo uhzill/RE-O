@@ -42,7 +42,7 @@ body { overflow-y: hidden; height: 100%; font-family: 'MinSans-Medium'; font-wei
 
 
 
-section.container { display: flex; width: max-content; height: calc(100vh - 13px); } 
+section.container { display: flex; width: max-content; height: calc(100vh - 15px); } 
 section.container .content,.contentTitle { width: 100vw; min-width: 1200px; color: #fff; box-sizing: border-box; padding: 7em; } 
 section.container .content { background-color: #121212; } 
 
@@ -124,6 +124,6 @@ footer .wrap li:nth-child(1) { font-size: 14px; }
 
 
 /* 스크롤바 커스텀 */
-::-webkit-scrollbar { height: 16px; } 
+::-webkit-scrollbar { height: 15px; } 
 ::-webkit-scrollbar-track { background-color: #fff;  } 
-::-webkit-scrollbar-thumb { background-color: #000; border-radius: 100px; border: 4px solid #fff; } 
+::-webkit-scrollbar-thumb { background-color: #000; border-radius: 16px; border: 3px solid #fff; } 
