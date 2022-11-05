@@ -117,9 +117,9 @@ section.container .team .member img { height: 30vh; }
 
 section.container .team .member li:nth-child(2) { font-size: 30px; font-weight: bold; } 
 
-footer { display: flex; justify-content: space-between; align-items: flex-end; position: fixed; width: calc(100vw - 30px); bottom: 15px; left: 15px; color: #000000b3; font-size: 12px; } 
+footer { display: flex; justify-content: space-between; align-items: flex-end; position: fixed; width: calc(100vw - 30px); bottom: 15px; left: 15px; color: #00000099; font-size: 12px; } 
 footer .wrap:nth-child(2) { text-align: right; } 
-footer .wrap li { display: inline; margin-right: 10px;} 
+footer .wrap li { display: inline; margin-right: 20px;} 
 footer .wrap li:nth-child(1) { font-size: 14px; } 
 
 
