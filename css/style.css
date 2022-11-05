@@ -62,12 +62,12 @@ section.container #_main h2 { font-size: 25px; font-weight: 100;}
 
 
 /* 1.video */
-section.container .video { padding: 0; } 
-section.container .video video { min-width: none; width: auto; height: 100%; } 
+section.container .video { width:fit-content; min-width: none; padding: 0; } 
+section.container .video video { width: auto; height: 100%; } 
 
-section.container .stepAnimation { position: relative; display: flex; padding: 0;  } 
-section.container .stepAnimation #canv { position: absolute; border: 1px solid red; }
-section.container .stepAnimation .show { position: absolute; top:0; border: 1px solid red; width:700px; height:700px; background: url('../img/o.png') no-repeat; background-size: cover; animation: reoAni 3.5s infinite alternate steps(31); } 
+section.container .stepAnimation { position: relative; display: flex; padding: 0; text-align: center; } 
+section.container .stepAnimation #canv { position: absolute; }
+section.container .stepAnimation .show { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width:700px; height:700px; background: url('../img/o.png') no-repeat; background-size: cover; animation: reoAni 3.5s infinite alternate steps(31); } 
 @keyframes reoAni { 100% { background-position: -21700px 0; }  }
 
 
