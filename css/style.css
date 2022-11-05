@@ -1,8 +1,14 @@
 @import "reset.css"; @font-face { font-family: 'Pretendard-Regular'; src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff'); } 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+@font-face {
+  font-family: 'MinSans-Medium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 html { scroll-behavior: smooth; } 
-body { overflow-y: hidden; height: 100%; } 
+body { overflow-y: hidden; height: 100%; font-family: 'MinSans-Medium'; font-weight: 500; } 
 .blind { position: absolute; width: 1px; height: 1px; clip: rect(0 0 0 0); overflow: hidden; } 
 
 section.container { display: flex; width: max-content; height: calc(100vh - 13px); } 
