@@ -5,7 +5,7 @@ html { scroll-behavior: smooth; }
 body { overflow-y: hidden; height: 100%; } 
 .blind { position: absolute; width: 1px; height: 1px; clip: rect(0 0 0 0); overflow: hidden; } 
 
-section.container { display: flex; width:max-content; height: calc(100vh - 13px); } 
+section.container { display: flex; width: max-content; height: calc(100vh - 13px); } 
 section.container .content,.contentTitle { width: 100vw; min-width: 1200px; color: #fff; box-sizing: border-box; padding: 7em; } 
 section.container .content { background-color: #121212; } 
 
