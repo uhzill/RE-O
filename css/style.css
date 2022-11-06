@@ -42,10 +42,12 @@ body { overflow-y: hidden; height: 100%; font-family: 'MinSans-Medium'; font-wei
 
 
 .container { display: flex; width: max-content; height: calc(100vh - 1px); } 
+
+/* 내용물 섹션 */
 .container .content,.contentTitle { width: 100vw; min-width: 1200px; color: #fff; box-sizing: border-box; padding: 7em; } 
 .container .content { background-color: #121212; } 
 
-/* 컨텐트 제목 섹션 */
+/* 제목 섹션 */
 .container .contentTitle { display: grid; grid-gap: 40px; grid-template-columns: 1fr 395px 395px; grid-template-rows: repeat(3, 1fr); background-color: #121212; font-weight: 500; } 
 .container .contentTitle h1 { display: flex; font-size: 180px; line-height: 170px; } 
 .container .contentTitle h1.num { grid-row:1; grid-column: 1/2; } 
@@ -55,9 +57,18 @@ body { overflow-y: hidden; height: 100%; font-family: 'MinSans-Medium'; font-wei
 
 
 /* main */
-.container #_main { display:flex; flex-direction: column; justify-content: flex-end; background-image: url('../img/mainBg.png'); background-size: cover; background-repeat: no-repeat; background-position: center; color: #fff; } 
-.container #_main h1 { font-size: 130px; line-height: 150px;  } 
-.container #_main h2 { font-size: 25px; font-weight: 100;} 
+.container #_main { display:flex; flex-direction: column; justify-content: flex-end; } 
+.container #_main h1 { font-size: 225px; line-height: 235px; } 
+.container #_main h2 { font-size: 70px; line-height: 85px;} 
+.container #_main h2 span { color: #121212; text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff; }
+.container #_main li{ font-size: 25px; display: inline; margin-left: 10px; }
+.container #_main p { font-size: 25px; text-align: right; animation: arrow infinite; }
+
+@keyframes arrow { 
+  0% {  }
+  100% {  }  
+}
+
 
 
 /* 1.video */
