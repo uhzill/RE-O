@@ -1,7 +1,7 @@
 @import "reset.css";@font-face { font-family: 'MinSans-Medium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Medium.woff') format('woff'); } 
 
 html { scroll-behavior: smooth; } 
-body { overflow-y: hidden; height: 100%; font-family: 'MinSans-Medium'; font-weight: 500; } 
+body { overflow-y: hidden; height: 100%; font-family: 'MinSans-Medium'; } 
 .blind { position: absolute; width: 1px; height: 1px; clip: rect(0 0 0 0); overflow: hidden; } 
 
 
@@ -18,9 +18,9 @@ body { overflow-y: hidden; height: 100%; font-family: 'MinSans-Medium'; font-wei
 .menu-open:checked + .menu-open-button .hamburger-2 { transform: scale(0.1, 1); } 
 .menu-open:checked + .menu-open-button .hamburger-3 { transform: rotate(-45deg); } 
 
-.menu { position: absolute; left: 50%; margin-left: -80px; padding-top: 20px; padding-left: 80px; width: 650px; height: 150px; box-sizing: border-box; font-size: 20px; text-align: left; z-index: 5; opacity: 30%; } 
+.menu { position: absolute; left: 50%; margin-left: -80px; padding-top: 20px; padding-left: 80px; width: 650px; height: 150px; box-sizing: border-box; font-size: 20px; text-align: left; z-index: 5; mix-blend-mode: screen; opacity: 70%; } 
 
-.menu-item:hover { background-color: #121212; color: #fff; } 
+.menu-item:hover { background-color: #121212; color: #fff;  } 
 .menu-open-button { z-index: 2; transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); transition-duration: 400ms; transform: scale(1.1, 1.1) translate(0, 0); cursor: pointer; } 
 
 .menu-open-button:hover { transform: scale(1.2, 1.2) translate(0, 0,); } 
@@ -39,10 +39,7 @@ body { overflow-y: hidden; height: 100%; font-family: 'MinSans-Medium'; font-wei
 
 
 
-.container { display: flex; width: max-content; height: calc(100vh - 1px); 
-  scroll-snap-type: x mandatory;
-  scroll-snap-type: y mandatory; 
-}
+.container { display: flex; width: max-content; height: calc(100vh - 10px); } 
 
 /* 내용물 섹션 */
 .container .content,.contentTitle { width: 100vw; min-width: 1200px; color: #fff; box-sizing: border-box; padding: 7em; } 

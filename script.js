@@ -14,7 +14,7 @@ $(document).ready(function(){
                 scroll += 350;
             }
             $("html, body").stop().animate({
-                    "scrollLeft":scroll
+                "scrollLeft":scroll
             },1);
 
             
