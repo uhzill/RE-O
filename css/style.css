@@ -10,8 +10,7 @@ body { overflow-y: hidden; height: 100%; font-family: 'MinSans-Medium'; font-wei
 .menu-item, .menu-open-button { background-color: #fff; border-radius: 100%; width: 60px; height: 60px; position: fixed; top: 30px; left: 30px; color: #121212; text-align: center; line-height: 60px; transform: translate(0, 0); transition: transform ease-out 200ms; font-size: 15px; } 
 
 .menu-open { display: none; } 
-
-.hamburger { width: 25px; height: 3px; background-color: #121212; display: block; position: absolute; top: 50%; left: 50%; margin-left: -12.5px; margin-top: -1.5px; transition: transform 200ms; } 
+.hamburger { width: 25px; height: 3px; background-color: #121212; display: block; position: absolute; top: 50%; left: 50%; margin-left: -12.5px; margin-top: -1.5px; transition: transform 200ms;  } 
 .hamburger-1 { transform: translate(0, -8px); } 
 .hamburger-2 { transform: translate(0, 0); } 
 .hamburger-3 { transform: translate(0, 8px); } 
@@ -20,7 +19,7 @@ body { overflow-y: hidden; height: 100%; font-family: 'MinSans-Medium'; font-wei
 .menu-open:checked + .menu-open-button .hamburger-2 { transform: scale(0.1, 1); } 
 .menu-open:checked + .menu-open-button .hamburger-3 { transform: rotate(-45deg); } 
 
-.menu { position: absolute; left: 50%; margin-left: -80px; padding-top: 20px; padding-left: 80px; width: 650px; height: 150px; box-sizing: border-box; font-size: 20px; text-align: left; z-index: 5; } 
+.menu { position: absolute; left: 50%; margin-left: -80px; padding-top: 20px; padding-left: 80px; width: 650px; height: 150px; box-sizing: border-box; font-size: 20px; text-align: left; z-index: 5; opacity: 30%; } 
 
 .menu-item:hover { background-color: #121212; color: #fff; } 
 .menu-open-button { z-index: 2; transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); transition-duration: 400ms; transform: scale(1.1, 1.1) translate(0, 0); cursor: pointer; } 
@@ -57,17 +56,46 @@ body { overflow-y: hidden; height: 100%; font-family: 'MinSans-Medium'; font-wei
 
 
 /* main */
-.container #_main { display:flex; flex-direction: column; justify-content: flex-end; } 
-.container #_main h1 { font-size: 225px; line-height: 235px; } 
+.container #_main { display:flex; align-items: flex-end; justify-content: space-between; background-image: url('../img/main_img.svg'); background-repeat: no-repeat; background-size: cover; background-position:right } 
+.container #_main h1 { font-size: 225px; line-height: 235px; }
 .container #_main h2 { font-size: 70px; line-height: 85px;} 
 .container #_main h2 span { color: #121212; text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff; }
 .container #_main li{ font-size: 25px; display: inline; margin-left: 10px; }
-.container #_main p { font-size: 25px; text-align: right; animation: arrow infinite; }
+.container #_main p { font-size: 25px; animation: arrow 1s ease-in-out alternate infinite; }
 
-@keyframes arrow { 
-  0% {  }
-  100% {  }  
+
+.container #_main h1{
+  font-size: 75px;
 }
+.container #_main h1 span{
+  width: 100%;
+  float: left;
+  color: #fff;
+  clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  transform: translateY(0px);
+  opacity: 1;
+  animation: titleAnimation ease 3s;
+}
+
+.container #_main h1 span:nth-child(1){ font-size: 70px; line-height: 85px; color: #121212; text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff; }
+.container #_main h1 span:nth-child(2){ font-size: 70px; line-height: 85px; }
+.container #_main h1 span:nth-child(3){ font-size: 225px; line-height: 235px; }
+
+@keyframes titleAnimation {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  }
+}
+
+@keyframes arrow { 0% { margin-right: 20px; } }
 
 
 
