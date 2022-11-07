@@ -79,7 +79,7 @@ $(document).ready(function(){
     this.rp = new Obj(x, y, z);
     this.rot = new Obj();
     this.vel = new Obj();
-    this.col = 'hsla(216,95%,85%,'+rnd(0.5, 1)+')';
+    this.col = 'hsla(225,50%,80%,'+ rnd(0.5, 1)+')';
     }
 
     function upd(rot) {
@@ -97,8 +97,8 @@ $(document).ready(function(){
         rot = arr[i].rot;
         vel = arr[i].vel;
         col = arr[i].col;
-        vel.x += msd.x * 0.15;
-        vel.y += msd.y * 0.15;
+        vel.x += msd.x * 0.05;
+        vel.y += msd.y * 0.05;
         rp.set(op.x, op.y, op.z);
 
         rot.x += vel.x;
