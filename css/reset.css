@@ -3,5 +3,5 @@ button,input { border-radius:0;}
 fieldset,img { border:0; } 
 ol,ul { list-style:none; } 
 address,em { font-style:normal; } 
-a { text-decoration: none; font-weight: bold; } 
+a { text-decoration: none; font-weight: bold; color: #fff; font-weight: 100; } 
 a:hover { text-decoration:none; } 
