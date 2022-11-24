@@ -1,17 +1,18 @@
 
 $(document).ready(function(){
 
-
+        
+    // 스크롤
     $(function(){
 
         $("html").mousewheel(function(event, d){
 
             if(d > 0){//스크롤 올릴 때 
                 var scroll = $(window).scrollLeft();
-                scroll -= 350; 
+                scroll -= 400; 
             } else if(d < 0) { //스크롤 내릴 때
                 var scroll = $(window).scrollLeft();
-                scroll += 350;
+                scroll += 400;
             }
             $("html, body").stop().animate({
                 "scrollLeft":scroll
@@ -23,6 +24,7 @@ $(document).ready(function(){
 
     });
 
+   
 
 
     // 물결
@@ -155,7 +157,6 @@ $(document).ready(function(){
     }, false);
 
     window.addEventListener('touchmove', function(e) {
-        e.preventDefault();
         msd.x = (e.touches[0].clientY - ms.y) / w;
         msd.y = (e.touches[0].clientX - ms.x) / h;
         ms.x = e.touches[0].clientX;
